@@ -8,7 +8,7 @@ import math
 from lib import face_confidence
 
 app = Flask(__name__)
-sub = cv2.createBackgroundSubtractorMOG2()  # create background subtractor
+# sub = cv2.createBackgroundSubtractorMOG2()  # create background subtractor
 
 @app.route('/')
 def index():
@@ -158,4 +158,4 @@ def video_feed():
                     mimetype='multipart/x-mixed-replace; boundary=frame')
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=False, host='0.0.0.0')
