@@ -1,7 +1,7 @@
 import time
 import cv2 
 from flask import Flask, render_template, Response
-import face_recognition
+# import face_recognition
 import os
 import numpy as np
 import math
